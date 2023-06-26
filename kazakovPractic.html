@@ -1,0 +1,90 @@
+<script>
+                                        // let text = "privet";
+                                        // let int = 12212;
+                                        // let test = true;
+                                        // function a (i) {
+                                        // console.log(typeof i);
+                                        // }
+                                        // a(text);
+                                        // a(int);
+                                        // a(test);
+
+
+                                        // const a = () => console.log("a");
+                                        // const b = () => console.log("b");
+                                        // const c = a || b ? a() : b();
+                                        // console.log(c);
+
+                                        // function count(...args) {
+                                        // return args.reduce((acc, cur) => typeof cur === 'number' ? acc + cur : acc, 0);
+                                        // }
+                                        // console.log(count(3, 2,"1", 5, true));
+                                        // console.log(count(10, "2", 39, 33, false));
+
+                                        // const arr = [1, null, 'test', undefined];
+                                        // const obj = convertArrToObj(arr);
+                                        // console.log(obj);
+                                        // function convertArrToObj (arr){
+                                        //         arr.forEach(element => {
+                                        //         console.log(element);
+                                        //        });
+                                        // }
+
+                                        // const arr = [1, 1, 1, 'test', 'test']
+                                        // const res = countFromArr(arr)
+                                        // function countFromArr(arr) {
+                                        //         arr.forEach(el => {
+                                        //                 console.log(el);
+                                        //         });
+                                        // }
+                                        // console.log(res)
+                                        
+                                        // function groupByField(arr, test) {
+                                        // return arr.reduce((acc, item) => {
+                                        // const value = item[test];
+                                        // if (!acc[value]) {
+                                        // acc[value] = [item];
+                                        // } else {
+                                        // acc[value].push(item);
+                                        // }
+                                        // return acc;
+                                        // }, {});
+                                        // }
+                                        // const arr = [{test: 1},{test: 2},{test: 3},{test: 1},{test: 1}];
+                                        // const res = groupByField(arr, 'test');
+                                        // console.log(res);
+
+                                        // Number.prototype.plus = function(num) {
+                                        // return this + num;
+                                        // }
+                                        // console.log((1).plus(2));
+
+                                        // console.log("start");
+                                        // setTimeout(() => console.log("timeout"), 0);
+                                        // new Promise((resolve, reject) => {
+                                        // console.log("promise constructor");
+                                        // reject();
+                                        // })
+                                        // .then(() => console.log("p1"))
+                                        // .catch(() => console.log("p2"))
+                                        // .catch(() => console.log("p3"))
+                                        // .then(() => console.log("p4"))
+                                        // .then(() => console.log("p5"));
+                                        // console.log("final");
+
+                                        //В консоль выведется:
+                                        // start
+                                        // promise constructor
+                                        // final
+                                        // p2
+                                        // p4
+                                        // p5
+                                        // timeout
+                                        
+                                        // setTimeout() будет добавлено в очередь событий, но как обратный вызов функции не будет выполнен, поскольку обещание было отклонено.
+                                        // Обещание используется при создании promise, затем catch() обрабатывает отклонение, и затем другой catch() не выполниться, потому что предыдущий catch() уже реализовал обещание. Поэтому затем выполнится два then() - p4 и p5.
+                                        // И в конце timeout, т.к был установлен setTimeout()
+
+
+                                        
+                                </script>
